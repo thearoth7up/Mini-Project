@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@theme{
+    --font-English:"Rubik", sans-serif;
+    --bg-color: #181C14;
+    --secondary-text-color: #181C14;
+}
+@custom-variant dark (&:where(.dark, .dark *));

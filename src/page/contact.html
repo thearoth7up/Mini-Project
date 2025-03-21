@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-neutral-800 dark:bg-white w-full md:w-[100%]  mx-auto">
+    <!-- Header -->
+    <header class="m-4 p-4 md:m-5 md:p-5">
+      <nav class="flex flex-col md:flex-row justify-between items-center">
+        <h1 class="text-2xl md:text-4xl font-bold">
+          <span class="text-indigo-600 font-English">THea</span>
+          <span class="text-white dark:text-neutral-800">roTH</span>
+          <span class="text-indigo-600 font-English">.</span>
+        </h1>
+        <ul
+          class="flex flex-wrap dark:text-neutral-800 justify-center gap-4 md:gap-10 font-medium text-white mt-4 md:mt-0"
+        >
+          <li class="hover:text-indigo-600">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="hover:text-indigo-600">
+            <a href="../page/about.html">About</a>
+          </li>
+          <li class="hover:text-indigo-600">
+            <a href="../page/service.html">Service</a>
+          </li>
+          <li class="hover:text-indigo-600">
+            <a href="../page/projects.html">Projects</a>
+          </li>
+          <li class="hover:text-indigo-600">
+            <a href="../page/contact.html">Contact</a>
+          </li>
+        </ul>
+        <button onclick="toggleDarkMode()" class="material-symbols-outlined text-white dark:text-neutral-800 mt-4 md:mt-0">
+          dark_mode
+        </button>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <div>
+      <h1 class="text-white font-bold text-3xl md:text-4xl text-center py-8">
+        <span class="text-indigo-600">Contact</span>
+        <span class="text-white dark:text-neutral-800">Me</span>
+      </h1>
+    </div>
+    <main class=" mx-auto px-4 md:px-10 py-6">
+      <form class="space-y-6 max-w-lg mx-auto">
+        <div>
+          <label for="full-name" class="block dark:text-neutral-800 text-sm font-medium text-white"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            id="full-name"
+            class="w-full text-white dark:text-neutral-800 p-2 hover:scale-105 mt-1 ring-2 ring-indigo-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            placeholder="Enter your full name"
+          />
+        </div>
+        <div>
+          <label for="email" class="block dark:text-neutral-800 text-white text-sm font-medium">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="w-full p-2 mt-1 hover:scale-105 dark:text-neutral-800 ring-2 ring-indigo-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div>
+          <label for="phone" class="block dark:text-neutral-800 text-white text-sm font-medium"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            class="w-full p-2 hover:scale-105 dark:text-neutral-800 mt-1 ring-2 ring-indigo-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div>
+          <label for="subject" class="block dark:text-neutral-800 text-white text-sm font-medium"
+            >Subject</label
+          >
+          <input
+            type="text"
+            id="subject"
+            class="w-full p-2 hover:scale-105 mt-1 ring-2 dark:text-neutral-800 ring-indigo-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            placeholder="Enter the subject"
+          />
+        </div>
+        <div>
+          <label for="message" class="block dark:text-neutral-800 text-white text-sm font-medium"
+            >Your Message</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="w-full p-2 hover:scale-105 mt-1 bg-neutral-700 dark:bg-neutral-200 dark:text-neutral-800 text-white rounded-lg focus:outline-none right-ring ring-2 focus:ring-2 focus:ring-indigo-600 ring-indigo-700 "
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-[35%] ml-[32%] hover:scale-105 bg-indigo-600 text-white p-2 rounded-4xl hover:bg-indigo-700 transition shadow-[0_0_20px_theme('color.indigo.700')] duration-300"
+        >
+          Send Message
+        </button>
+      </form>
+    </main>
+<!-- Footer -->
+<footer class="bg-stone-700 p-5 mt-30 text-white">
+    <div class="container mx-auto">
+      <!-- footer icon -->
+       <div class=" flex flex-wrap justify-center ">
+
+         <img src="../../assets/image copy 7.png" alt="icon" class="w-[40%] md:w-[20%] ">
+       </div>
+      <!-- Footer Links -->
+      <ul class="flex flex-wrap mt-5 justify-center gap-4 md:gap-6 text-sm">
+        <li>
+          <a href="../index.html" class="hover:text-indigo-600">FDA</a>
+        </li>
+        <li>
+          <a href="../page/about.html" class="hover:text-indigo-600">About</a>
+        </li>
+        <li>
+          <a href="../page/service.html" class="hover:text-indigo-600"
+            >Service</a
+          >
+        </li>
+        <li>
+          <a href="../page/projects.html" class="hover:text-indigo-600"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="../page/contact.html" class="hover:text-indigo-600"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <!-- Copyright Notice -->
+      <p class="text-center text-sm mt-4">© Thea Rath | All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      const isDarkMode = document.documentElement.classList.contains('dark');
+      localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+      if (savedDarkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    });
+  </script>
+  </body>
+</html>
